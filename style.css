@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --primary-color: hsl(150, 36%, 37%);
+    --secondary-color: hsl(30, 38%, 92%);
+
+    --neutral-dark-color: hsl(212, 21%, 14%);
+    --neutral-light-color: hsl(228, 12%, 48%);
+    --white-color: hsl(0, 0%, 100%);
+    --hover-color: hsl(150, 36%, 20%);
+
+    --body-font: 'Montserrat', sans-serif;
+    --title-font: 'Fraunces', serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: .875rem;
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
+    color: var(--neutral-light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card > img {
+    width: 50%;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.card__category {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin: 0;
+}
+
+.card__title {
+    font-family: var(--title-font);
+    color: var(--neutral-dark-color);
+    line-height: 2.3rem;
+    font-size: 2.2rem;
+}
+
+.card__description {
+    line-height: 1.5rem;
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.card__price span:first-child {
+    font-size: 2.2rem;
+    font-family: var(--title-font);
+    color: var(--primary-color);
+}
+
+.card__price span:last-child {
+    margin-left: 1rem;
+    text-decoration: line-through;
+}
+
+.card__cta {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1rem;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card__cta:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+.card__cta img {
+    width: 1rem;
+    margin-right: .5rem;
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card > img {
+        width: 100%;
+    }
+}
