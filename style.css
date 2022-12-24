@@ -32,6 +32,11 @@ body {
     padding: 1rem;
 }
 
+img  {
+    display: block;
+    max-width: 100%;
+}
+
 .card {
     background-color: var(--white-color);
     display: flex;
@@ -48,6 +53,7 @@ body {
 .card__content {
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding: 2rem;
 }
 
@@ -106,6 +112,7 @@ body {
 .card__cta img {
     width: 1rem;
     margin-right: .5rem;
+    display: inline-block;
 }
 
 @media screen and (max-width: 375px) {
