@@ -47,12 +47,10 @@ At first I ditn't know how to add responsive images to the HTML, and I didn't wa
 Below is code on how I did it in end:
 
 ```html
-<img 
-  srcset="/images/image-product-desktop.jpg"
-  src ="/images/image-product-mobile.jpg" 
-  alt="Perfume"
-  sizes="(max-width: 425px)"
->
+<picture>
+  <source media="(min-width: 375px)" srcset="./images/image-product-desktop.jpg">
+  <img src ="./images/image-product-mobile.jpg" alt="Perfume">
+</picture>
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
