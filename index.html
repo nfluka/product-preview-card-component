@@ -23,7 +23,12 @@
 
    <div class="card">
   
-    <img src ="/images/image-product-desktop.jpg" alt="Perfume">
+    <img 
+      srcset="./images/image-product-desktop.jpg"
+      src ="./images/image-product-mobile.jpg" 
+      alt="Perfume"
+      sizes="(max-width: 425px)"
+      >
 
     <div class="card__content">
       <p class="card__category">Perfume</p>
@@ -40,7 +45,7 @@
       </div>
 
       <button class="card__cta"> 
-        <img src="/images/icon-cart.svg" alt="cart-icon" aria-hidden="true">
+        <img src="./images/icon-cart.svg" alt="cart-icon" aria-hidden="true">
         Add to Cart
       </button>
     </div>
